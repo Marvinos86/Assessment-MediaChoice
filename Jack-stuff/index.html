@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marvin TV Gids</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page">
+
+<div class="banner">
+</div>
+
+<!-- Next button -->
+<a class="prev" id="prevBtn" onclick="scrollLeft()">&#10094;</a>
+
+<!-- Slideshow container -->
+<div class="slideshow-container" id="slidebar">
+
+    <!-- <div class="mySlides">
+      <img src="images/h1.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <img src="images/h2.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <img src="images/h3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <img src="images/h4.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <img src="images/h5.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <img src="images/h6.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <img src="images/h7.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <img src="images/h8.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <img src="images/h9.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <img src="images/h10.jpg" style="width:100%">
+    </div> -->
+
+</div>
+
+<!-- Next button -->
+<a class="next" id="nextBtn" onclick="scrollRight()" >&#10095;</a>
+
+
+To DO:
+-knoppen js werkend maken
+-extra div achter afbeeldingen met width 0 waar data in kan
+
+<template data-templateType="show" class="templateShow">
+    <div>
+        <img src="&&&IMGSRC&&&">
+    </div>
+    <div>
+        <p class="title">&&&TITLE&&&</p>
+        <p class="description">&&&DESC&&&</p>
+    </div>
+</template>
+
+<script>
+
+    // Make Scroll Buttons work
+    var slider = document.getElementsByClassName("slideshow-container");
+    var nextBtn = document.getElementById('nextBtn');
+    var prevBtn = document.getElementById('prevBtn');
+
+
+    function scrollRight() {
+        slider.scroll(0,1000);
+    }
+
+</script>
+<!-- <script src="./not-a-library.js"></script> -->
+<script src="./script.js"></script>
+</body>
+</html>

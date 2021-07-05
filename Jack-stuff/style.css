@@ -1,0 +1,167 @@
+/* TV Gids Style */
+
+html { 
+    width: 100%;
+    
+}
+
+.slider-bar {
+    width: 150%;
+    height: 200px;
+    background-color: blue;
+    text-align: center;
+    overflow: hidden;
+}
+
+.item{
+    width: 200px;
+    height: 200px;
+    background-color: yellow; 
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.data {
+    width: 400px;
+    height: 1000px;
+    background-color: green;
+    margin-top: 20px;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    float: left;
+    overflow-x: hidden;
+}
+
+
+
+/* NEW SETUP */
+* {box-sizing:border-box}
+
+.banner {
+  height: 100px;
+  width: 100vw;
+  background-color: blue;
+  z-index: 2;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  transform-origin: left top;
+  margin-top: 200px;
+  position: absolute;
+  width: 35vh;
+  height: 100vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transform: rotate(-90deg);
+  float: left;
+  display: inline;
+  white-space: nowrap;
+  z-index: 1;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+.mySlides {
+  overflow: hidden;
+  width: auto;
+  height: 200px;
+  min-height: 100px;
+  margin: 10px;
+  background-color: yellow;
+  transform: rotate(90deg);
+} 
+
+img {
+  width: 300px;
+  height: 500px;
+  position: absolute;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  z-index: 1000;
+  background-color: rgba(0,0,0,0.8);
+  top: 200px;
+}
+
+.prev {
+  border-radius: 0 3px 3px 0;
+  left: 0;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
