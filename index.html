@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marvin TV Gids</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body class="page">
+
+<div class="banner">
+    <img src="Images/banner.jpg" style="width: 100vw;height:20vw;">
+</div>
+
+
+<!-- Next button -->
+<a class="prev" id="prevBtn" onclick="scrollLeft()">&#10094;</a>
+
+<!-- Slideshow container -->
+<div class="slideshow-container" id="slidebar">
+
+    <div class="mySlides">
+        <div class="time">
+            bladiebladiebla
+        </div>
+        
+        <div class="image-container">
+            <img src="images/h1.jpg" style="width:100%; height:100%;">
+        </div>
+        <p class="title">bla bla</p>
+    </div>
+</div>
+<!-- Next button -->
+<a class="next" id="nextBtn" onclick="scrollRight()" >&#10095;</a>
+
+<script>
+    // Make Scroll Buttons work
+    var slider = document.getElementsByClassName("slideshow-container");
+    var nextBtn = document.getElementById('nextBtn');
+    var prevBtn = document.getElementById('prevBtn');
+
+
+    function scrollRight() {
+        slider.scroll(0,1000);
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+/* TV Gids Style */
+
+.page {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  float: left;
+  overflow-x: hidden;
+}
+
+* {box-sizing:border-box}
+
+.banner {
+  height: 20vw;
+  width: 100vw;
+  background-color: #ffffff;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  transform-origin: left top;
+  top: 35vw;
+  position: absolute;
+  height: 100vw;
+  min-height: 80px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transform: rotate(-90deg);
+  float: left;
+  display: inline;
+  white-space: nowrap;
+  z-index: 1;
+  left: 0;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+.mySlides {
+  overflow: hidden;
+  width: 14.28vw;
+  height: 14.28vw;
+  background-color: #00cc99;
+  transform: rotate(90deg);
+  border-right: 3px solid #ffcc99;
+} 
+
+.time {
+  width: 50px;
+  height: 20px;
+  background-color: yellow;
+  border: 2px solid #ffcc99;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.title {
+  color: black;
+  font-size: 14px;
+  margin-left: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.poster {
+  width: 100%;
+  height: 100%;
+}
+
+.image-container {
+  top: 2vw;
+  width: 14.28vw;
+  height: 12.30vw;
+  position: absolute;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  width: 30px;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 1000;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.8);
+  /* transform: rotate(90deg); */
+  top: 26vw;
+}
+
+.prev {
+  border-radius: 0 3px 3px 0;
+  left: 0;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  max-height: 30px;
+  padding-bottom: 30px;
+}

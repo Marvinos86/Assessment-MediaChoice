@@ -1,0 +1,34 @@
+
+	-dag filteren met timestamp
+	-data weergeven
+	-css goed maken
+	-
+
+
+2021-06-04T00:00:00.0000000  
+
+2021-06-04T 00:00  :00.0000000
+
+
+    /*
+
+    // https://stackoverflow.com/questions/14781153/how-to-compare-two-string-dates-in-javascript
+
+    Date.parse(show.EndPubDate)
+    // de show.EndPubDate haal je uit het show object wat je hierboven binnenkrijgt, daar staat een datum een bepaalde notatie in
+    // als je dat parsed dan krijg je de datum als een timestamp
+    // een timestamp is een numerieke representatie van een datum, namelijk de datum vanaf 1 jan 1970 in seconden (jka serieus, zoveel seconden zijn eroverheen gegaan sinds die datum tot de datum die je hebt geparst)
+    // omdat die datum nu een nummer is, kan je daarmee makkelijk rekenen en dus vergelijken en dus ook berekenen welke show waar moet komen
+    */
+
+    // Ik probeer hier, voor newDivTime, de PubDate via een timestamp om te zetten
+    // naar uren, die boven de items kunnen worden weergegeven. 
+
+
+Het lukt me niet:
+
+-om uit de JSON data een array te maken met de items van vandaag
+-om een item te centreren dat op dit moment bezig is (uit alle items of uit items vandaag niet)
+-om items verplaatsbaar te maken en daarbij de tijd opnieuw te berekenen
+-om de scroll toe te passen op de knoppen
+
